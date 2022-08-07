@@ -54,6 +54,7 @@ const root = {
     ),
 };
 
+// don't forget to create data base name userapp and table users with id, name,email, job_title
 app.use((req, res, next) => {
   req.mysqlDb = mysql.createConnection({
     host: "localhost",
